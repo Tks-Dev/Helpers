@@ -1,0 +1,92 @@
+﻿<Window x:Class="ControlsTester.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:clickableProgressBar="clr-namespace:TKControls.ClickableProgressBar;assembly=TKControls"
+        xmlns:gridSlider="clr-namespace:TKControls.GridSlider;assembly=TKControls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Button Name="JackPot" Click="JackPot_OnClick" Content="LI PAPILLOOOOOON !!!"/>
+        </Grid>
+        <!--GridSplitter Foreground="Blue" Grid.Row="1" VerticalAlignment="Stretch" Width="5" HorizontalAlignment="Right" ResizeBehavior="CurrentAndNext" Background="Blue"/-->
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+            <Grid Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid Column="0">
+                    <Label Content="Money :" VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
+                </Grid>
+                <Grid Column="1">
+                    <Label Name="LblMoney" VerticalContentAlignment="Center"/>
+                </Grid>
+            </Grid>
+            <Grid Row="1">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80*"/>
+                                <ColumnDefinition Width="25*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Column ="0">
+                                <clickableProgressBar:ClickableProgress VerticalContentAlignment="Stretch" Name="MimiBar" LabelContent="Acheter une Mimi pour 3 papillons" Auto="True" Time="1000" VerticalAlignment="Top" Completed="MimiBar_OnCompleted" Click="MimiBar_OnClick" BarColor="DeepPink" TextColor="BlanchedAlmond"/>
+                            </Grid>
+                            <Grid Column="1">
+                                <Button Name="SpeedMimi" Click="SpeedMimi_OnClick" Content="Speed 5%" ToolTip="8 Papillons"/>
+                            </Grid>
+                        </Grid>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80*"/>
+                                <ColumnDefinition Width="25*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Column ="0">
+                                <clickableProgressBar:ClickableProgress VerticalContentAlignment="Stretch" Name="BalooBar" LabelContent="Acheter un Baloo pour 150 papillons" Auto="True" Time="5000" VerticalAlignment="Top" Completed="BalooBar_OnCompleted" Click="BalooBar_OnClick" BarColor="SaddleBrown" TextColor="BlanchedAlmond"/>
+                            </Grid>
+                            <Grid Column="1">
+                                <Button Name="SpeedBaloo" Click="SpeedBaloo_OnClick" Content="Speed 5%" ToolTip="160 Papillons"/>
+                            </Grid>
+                        </Grid>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80*"/>
+                                <ColumnDefinition Width="25*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Column ="0">
+                                <clickableProgressBar:ClickableProgress VerticalContentAlignment="Stretch" Name="TigrouneBar" LabelContent="Acheter un Tigroune pour 60000 papillons" Auto="True" Time="10000" VerticalAlignment="Top" Completed="TigrouneBar_OnCompleted" Click="TigrouneBar_OnClick" BarColor="White" TextColor="DarkGray"/>
+                            </Grid>
+                            <Grid Column="1">
+                                <Button Name="SpeedTigroune" Click="SpeedTigroune_OnClick" Content="Speed 5%" ToolTip="70000 Papillons"/>
+                            </Grid>
+                        </Grid>
+                    </StackPanel>
+                </ScrollViewer>
+                <gridSlider:GridSlider Name="GridSlider" Margin="0,80,0,0" VerticalAlignment="Stretch" MinHeight="40" HorizontalAlignment="Stretch" Delay="0" Duration="0" VerticalButtonsAlignements="Center" ButtonsBackgroundBrush="DeepPink" ButtonsOpacity="0.5" ButtonsOccupation="100">
+                        <Grid Background="Black"/>
+                        <Grid Background="Blue"/>
+                </gridSlider:GridSlider>
+
+            </Grid>
+            <Button Name="Debug" VerticalAlignment="Bottom" HorizontalAlignment="Right" Padding="5,2,5,2" Click="Debug_OnClick" Grid.Row="2" Content="Debug"/>
+            
+        </Grid>
+        
+    </Grid>
+</Window>
+

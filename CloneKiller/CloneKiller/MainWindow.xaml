@@ -1,0 +1,24 @@
+﻿<Window x:Class="CloneKiller.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="Clone Killer" Height="350" MinWidth="525" Width="525" Background="#F87F7F" FontFamily="segoe ui" Icon="Images/icon.ico" WindowStartupLocation="CenterScreen" StateChanged="MainWindow_OnStateChanged">
+    <Grid>
+        <Label Content="Clone Killer" VerticalAlignment="Top" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Padding="30,0,0,0" Height="50" FontSize="20" Background="#941010" Foreground="#F87F7F"/>
+        <Menu Background="#690000" VerticalAlignment="Top" Height="20" HorizontalAlignment="Stretch" Margin="0,50,0,0">
+            <MenuItem Name="MitemSelectFolder"  VerticalAlignment="Stretch" VerticalContentAlignment="Center" Header="Select folder" Foreground="#D24B4B" Click="MitemSelectFolder_Click"/>
+            <CheckBox Name="CboxMinimize" IsChecked="False" VerticalAlignment="Center" HorizontalAlignment="Right" Content="Minimize on working" Foreground="#D24B4B" />
+            <CheckBox Name="CboxRestore" IsChecked="False" VerticalAlignment="Center" HorizontalAlignment="Right" Content="Restore when finished" Foreground="#D24B4B" />
+            <MenuItem Name="MItemShowClone" VerticalAlignment="Stretch" HorizontalAlignment="Right" Foreground="#D24B4B" Header="Show clones" Opacity="0" IsEnabled="False" Click="MItemShowClone_OnClick"/>
+        </Menu>
+        <Label Content="Margin :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,80,0,0" Foreground="#941010"></Label>
+        <xctk:IntegerUpDown VerticalAlignment="Top" HorizontalAlignment="Left" Name="UpDoPercentError" Background="#941010" Foreground="#F87F7F" Margin="70,80,0,0" Height="26" Width="50" Minimum="0" Maximum="99" DefaultValue="0" Value="0" ValueChanged="UpDoPercentError_OnValueChanged"/>
+        <Label Content="%" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="120,80,0,0" />
+        <Label Name="LblCount" Opacity="0.5" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,70,10,0" />
+        <Label Name="LblFileName" Opacity="0.5" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="150,90,10,0" HorizontalContentAlignment="Right" />
+        <DataGrid Name="DgridClones" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10,110,10,10" SelectedCellsChanged="DgridClones_OnSelectedCellsChanged"/>
+    </Grid>
+</Window>

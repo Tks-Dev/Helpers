@@ -1,0 +1,6 @@
+c:\users\toshiba\documents\visual studio 2015\Projects\Crypto\Crypto\bin\Debug\Crypto.exe.config
+c:\users\toshiba\documents\visual studio 2015\Projects\Crypto\Crypto\bin\Debug\Crypto.exe
+c:\users\toshiba\documents\visual studio 2015\Projects\Crypto\Crypto\bin\Debug\Crypto.pdb
+c:\users\toshiba\documents\visual studio 2015\Projects\Crypto\Crypto\obj\Debug\Crypto.csprojResolveAssemblyReference.cache
+c:\users\toshiba\documents\visual studio 2015\Projects\Crypto\Crypto\obj\Debug\Crypto.exe
+c:\users\toshiba\documents\visual studio 2015\Projects\Crypto\Crypto\obj\Debug\Crypto.pdb

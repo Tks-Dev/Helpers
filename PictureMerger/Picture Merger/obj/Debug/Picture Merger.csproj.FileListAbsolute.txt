@@ -1,0 +1,34 @@
+c:\users\toshiba\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\Picture Merger.exe.config
+c:\users\toshiba\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\Picture Merger.exe
+c:\users\toshiba\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\Picture Merger.pdb
+c:\users\toshiba\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\obj\Debug\Picture Merger.csprojResolveAssemblyReference.cache
+c:\users\toshiba\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\obj\Debug\MainWindow.g.cs
+c:\users\toshiba\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\obj\Debug\App.g.cs
+c:\users\toshiba\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\obj\Debug\Picture Merger_MarkupCompile.cache
+c:\users\toshiba\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\obj\Debug\Picture Merger_MarkupCompile.lref
+c:\users\toshiba\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\obj\Debug\MainWindow.baml
+c:\users\toshiba\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\obj\Debug\Picture Merger.g.resources
+c:\users\toshiba\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\obj\Debug\Picture_Merger.Properties.Resources.resources
+c:\users\toshiba\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\obj\Debug\Picture Merger.csproj.GenerateResource.Cache
+c:\users\toshiba\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\obj\Debug\Picture Merger.exe
+c:\users\toshiba\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\obj\Debug\Picture Merger.pdb
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\obj\Debug\FileNameWindow.g.cs
+C:\Users\TOSHIBA\documents\visual studio 2015\Projects\PictureMerger\Picture Merger\obj\Debug\FileNameWindow.baml
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\TksHelpers.dll
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\PictureMerger\Picture Merger\bin\Debug\TksHelpers.pdb

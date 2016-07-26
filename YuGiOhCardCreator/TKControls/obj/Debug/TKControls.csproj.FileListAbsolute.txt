@@ -1,0 +1,14 @@
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\YuGiOhCardCreator\TKControls\bin\Debug\TKControls.dll
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\YuGiOhCardCreator\TKControls\bin\Debug\TKControls.pdb
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\YuGiOhCardCreator\TKControls\obj\Debug\TKControls.csprojResolveAssemblyReference.cache
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\YuGiOhCardCreator\TKControls\obj\Debug\ClickableImage.g.cs
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\YuGiOhCardCreator\TKControls\obj\Debug\TKControls_MarkupCompile.cache
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\YuGiOhCardCreator\TKControls\obj\Debug\TKControls_MarkupCompile.lref
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\YuGiOhCardCreator\TKControls\obj\Debug\ClickableImage.baml
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\YuGiOhCardCreator\TKControls\obj\Debug\TKControls.g.resources
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\YuGiOhCardCreator\TKControls\obj\Debug\TKControls.Properties.Resources.resources
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\YuGiOhCardCreator\TKControls\obj\Debug\TKControls.csproj.GenerateResource.Cache
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\YuGiOhCardCreator\TKControls\obj\Debug\TKControls.dll
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\YuGiOhCardCreator\TKControls\obj\Debug\TKControls.pdb
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\YuGiOhCardCreator\TKControls\obj\Debug\AutoSizedLabel.g.cs
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\YuGiOhCardCreator\TKControls\obj\Debug\AutoSizedLabel.baml

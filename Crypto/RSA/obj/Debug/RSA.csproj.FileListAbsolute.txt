@@ -1,0 +1,6 @@
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\Crypto\RSA\obj\Debug\RSA.csprojResolveAssemblyReference.cache
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\Crypto\RSA\bin\Debug\RSA.exe.config
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\Crypto\RSA\bin\Debug\RSA.exe
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\Crypto\RSA\bin\Debug\RSA.pdb
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\Crypto\RSA\obj\Debug\RSA.exe
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\Crypto\RSA\obj\Debug\RSA.pdb

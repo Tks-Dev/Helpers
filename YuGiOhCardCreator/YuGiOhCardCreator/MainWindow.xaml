@@ -1,0 +1,130 @@
+﻿<Window x:Class="YuGiOhCardCreator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YuGiOhCardCreator"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:tkControls="clr-namespace:TKControls;assembly=TKControls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" Background="Black" SizeChanged="MainWindow_OnSizeChanged">
+    <Grid>
+        <Image Source="Pictures/Background.png" Stretch="UniformToFill" StretchDirection="Both" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Name="GridCard"  VerticalAlignment="Stretch" HorizontalAlignment="Left" Margin="10,10,0,10" Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="98*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Column="0"/>
+                <Grid Column="1">
+                    <Image Name="CardBack" VerticalAlignment="Stretch" HorizontalAlignment="Center" Stretch="Uniform"/>
+                    <Grid Name="GridInnerCard" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Name="RowGapTop"             Height="35*"/> <!-- 0 Vide du dessus -->
+                            <RowDefinition Name="RowGridAttribute"      Height="40*"/> <!-- 1 Grid de l'attribut, contient un sous grid pour le nom-->
+                            <RowDefinition Name="RowGapAttributeLevel"  Height="10*"/> <!-- 2 Vide entre attribut et niveaux -->
+                            <RowDefinition Name="RowGridLevel"          Height="25*"/> <!-- 3 Grid des niveaux -->
+                            <RowDefinition Name="RowGapLevelImage"      Height="15*"/> <!-- 4 vide niveaux image -->
+                            <RowDefinition Height="289*"/> <!-- 5 Grid Image -->
+                            <RowDefinition Height="33*"/> <!-- 6 Vide image type / Effet pendulum -->
+                            <RowDefinition Height="133*"/> <!-- 7 Reste -->
+                        </Grid.RowDefinitions>
+                        <Grid Row ="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="45*"/> <!-- Vide Nom -->
+                                <ColumnDefinition Width="275*"/> <!-- Nom -->
+                                <ColumnDefinition Width="5*"/> <!-- vide nom-attrbut -->
+                                <ColumnDefinition Width="40*"/> <!-- Attribut -->
+                                <ColumnDefinition Width="35*" /> <!-- Vide post attribut -->
+                            </Grid.ColumnDefinitions>
+                            <Grid Column="1">
+                                <Viewbox HorizontalAlignment="Left">
+                                    <TextBlock Name="TblockCardName" HorizontalAlignment="Left" FontFamily="MatrixRegularSmallCaps"/>
+                                </Viewbox>
+                            </Grid>
+                            
+                            <Grid Column="3">
+                                <tkControls:ClickableImage Name="ImgAttribute"/>
+                                <Rectangle Name="r1" Stretch="Fill"/>
+                            </Grid>
+                        </Grid>
+                        <Grid Row="3">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="355*"/>
+                                    <ColumnDefinition Width="45*"/>
+                                </Grid.ColumnDefinitions>
+                            </Grid>
+                            <Grid Column="0">
+                                <StackPanel Name="StckLevel" Orientation="Horizontal" VerticalAlignment="Stretch" FlowDirection="RightToLeft" HorizontalAlignment="Stretch" Margin="10,0,45,0"/>
+                            </Grid>
+                        </Grid>
+                        <Grid Row="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="55*"/>
+                                <ColumnDefinition Width="289*"/>
+                                <ColumnDefinition Width="55*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Column="1">
+                                <tkControls:ClickableImage Name="CardImage" Click="CardImage_OnClick"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Grid Column="2"/>
+            </Grid>
+            <Grid Column="1">
+                <!--Button Click="ButtonBase_OnClick">Afficher coords</-->
+                <Rectangle Fill="White" Opacity="0.1" />
+                <Label Name="LabelTop" Content="Top : " Width="160" VerticalAlignment="Top" HorizontalAlignment="Left" Background="White" Margin="0,0,0,0" Opacity="0"/>
+                <Label Name="LabelLeft" Content="Left : " Width="160" VerticalAlignment="Top" HorizontalAlignment="Left" Background="White" Margin="0,25,0,0" Opacity="0" />
+                <Label Name="LabelRight" Content="Right : " Width="160" VerticalAlignment="Top" HorizontalAlignment="Left" Background="White" Margin="0,50,0,0" Opacity="0" />
+                <Label Name="LabelBottom" Content="Bottom : " Width="160"  VerticalAlignment="Top" HorizontalAlignment="Left" Background="White" Margin="0,75,0,0" Opacity="0" />
+                <Label Content="Card's name : " VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Margin="10,10,0,0" />
+                <TextBox Name="TboxCardName" VerticalAlignment="Top" HorizontalAlignment="Stretch" ToolTip="Enter the card's name" Height="26" Margin="98,10,10,10" TextChanged="TboxCardName_TextChanged" VerticalContentAlignment="Center"/>
+                <Label Content="Card's ID : " VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,40,0,0" Foreground="White"/>
+                <TextBox Name="TboxCardId" VerticalAlignment="Top" HorizontalAlignment="Stretch" ToolTip="Enter the card's ID" Height="26" Margin="98,40,10,0" VerticalContentAlignment="Center"/>
+                <Label Content="Card's image : " VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,70,0,0" Foreground="White"/>
+                <Label Name="LblCardImage" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="98,70,50,0" Foreground="LightGray"/>
+                <Button Name="BtnImageBrowse" VerticalAlignment="Top" HorizontalAlignment="Right" Content="..." Margin="0,70,10,0" Width="30" Height="26"/>
+                <Label Content="Card's Type : " Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,100,0,0" />
+                
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="98,100,10,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="49*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="49*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Column="0">
+                        <ComboBox Name="CboxCardType" VerticalAlignment="Top" HorizontalAlignment="Stretch" SelectionChanged="CboxCardType_SelectionChanged"/>
+                    </Grid>
+                    <Grid Column="2">
+                        <ComboBox Name="CboxCardSpecType" VerticalAlignment="Top" HorizontalAlignment="Stretch" SelectionChanged="CboxCardSpecType_SelectionChanged"/>
+                    </Grid>
+                </Grid>
+                <GroupBox Name="GboxMonster" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10,130,10,10" Opacity="0">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <StackPanel Name="StckPanel">
+                            <Grid>
+                                <Label Content="Description:" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+                                <TextBox Height="60" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="10,35,10,0"/>
+                            </Grid>
+                            <Grid>
+                                <Label Content="Type : " VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0" Foreground="White"/>
+                                <ComboBox Name="CboxSubTypes" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="80,10,10,5" SelectionChanged="CboxSubTypes_OnSelectionChanged" />
+                            </Grid>
+                        </StackPanel>
+                    </ScrollViewer>
+                </GroupBox>
+                <Button Name="btn_coord" Content="Debug"  VerticalAlignment="Bottom" HorizontalAlignment="Right" Click="ButtonBase_OnClick"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

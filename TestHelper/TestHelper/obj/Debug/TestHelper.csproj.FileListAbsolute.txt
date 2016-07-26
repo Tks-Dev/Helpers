@@ -1,0 +1,9 @@
+c:\users\toshiba\documents\visual studio 2015\Projects\TestHelper\TestHelper\bin\Debug\TestHelper.exe.config
+c:\users\toshiba\documents\visual studio 2015\Projects\TestHelper\TestHelper\bin\Debug\TestHelper.exe
+c:\users\toshiba\documents\visual studio 2015\Projects\TestHelper\TestHelper\bin\Debug\TestHelper.pdb
+c:\users\toshiba\documents\visual studio 2015\Projects\TestHelper\TestHelper\bin\Debug\TksHelpers.dll
+c:\users\toshiba\documents\visual studio 2015\Projects\TestHelper\TestHelper\bin\Debug\taglib-sharp.dll
+c:\users\toshiba\documents\visual studio 2015\Projects\TestHelper\TestHelper\bin\Debug\TksHelpers.pdb
+c:\users\toshiba\documents\visual studio 2015\Projects\TestHelper\TestHelper\obj\Debug\TestHelper.csprojResolveAssemblyReference.cache
+c:\users\toshiba\documents\visual studio 2015\Projects\TestHelper\TestHelper\obj\Debug\TestHelper.exe
+c:\users\toshiba\documents\visual studio 2015\Projects\TestHelper\TestHelper\obj\Debug\TestHelper.pdb

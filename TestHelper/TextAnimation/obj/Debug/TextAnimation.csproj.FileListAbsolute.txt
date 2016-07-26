@@ -1,0 +1,17 @@
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\TestHelper\TextAnimation\bin\Debug\TextAnimation.exe.config
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\TestHelper\TextAnimation\bin\Debug\TextAnimation.exe
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\TestHelper\TextAnimation\bin\Debug\TextAnimation.pdb
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\TestHelper\TextAnimation\bin\Debug\TksHelpers.dll
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\TestHelper\TextAnimation\bin\Debug\taglib-sharp.dll
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\TestHelper\TextAnimation\bin\Debug\TksHelpers.pdb
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\TestHelper\TextAnimation\obj\Debug\TextAnimation.csprojResolveAssemblyReference.cache
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\TestHelper\TextAnimation\obj\Debug\MainWindow.g.cs
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\TestHelper\TextAnimation\obj\Debug\App.g.cs
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\TestHelper\TextAnimation\obj\Debug\TextAnimation_MarkupCompile.cache
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\TestHelper\TextAnimation\obj\Debug\TextAnimation_MarkupCompile.lref
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\TestHelper\TextAnimation\obj\Debug\MainWindow.baml
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\TestHelper\TextAnimation\obj\Debug\TextAnimation.g.resources
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\TestHelper\TextAnimation\obj\Debug\TextAnimation.Properties.Resources.resources
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\TestHelper\TextAnimation\obj\Debug\TextAnimation.csproj.GenerateResource.Cache
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\TestHelper\TextAnimation\obj\Debug\TextAnimation.exe
+C:\Users\TOSHIBA\Documents\Visual Studio 2015\Projects\TestHelper\TextAnimation\obj\Debug\TextAnimation.pdb
