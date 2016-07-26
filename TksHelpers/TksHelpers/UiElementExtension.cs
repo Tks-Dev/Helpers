@@ -45,14 +45,20 @@ namespace TksHelpers
 
         private static List<FrameworkElement> _slidingItems;
 
-        public static void Slide(this FrameworkElement uiElement, uint offset, double startTime, double duration, OffsetDirection direction = OffsetDirection.Left, Action OnCompleteAction = null)
+        public static void Slide(this FrameworkElement uiElement, uint offset, double startTime, double duration,
+            OffsetDirection direction = OffsetDirection.Left, bool safeSlide = true, Action OnCompleteAction = null)
         {
-            if(_slidingItems == null)
-                _slidingItems = new List<FrameworkElement>();
-            if(_slidingItems.Contains(uiElement))
-                return;
-            _slidingItems.Add(uiElement);
-            var off = (long) offset;
+            if (safeSlide)
+            {
+                if (_slidingItems == null)
+                    _slidingItems = new List<FrameworkElement>();
+                if (_slidingItems.Contains(uiElement))
+                    return;
+                _slidingItems.Add(uiElement);
+            }
+
+
+            var off = (long)offset;
             if (direction == OffsetDirection.Right)
                 off *= -1;
             var thick = new Thickness(uiElement.Margin.Left - off, uiElement.Margin.Top, uiElement.Margin.Right + off, uiElement.Margin.Bottom);
@@ -63,9 +69,12 @@ namespace TksHelpers
                 FillBehavior = FillBehavior.Stop,
                 To = thick
             };
-            thicknessAnim.Completed += (sender, args) => { uiElement.Margin = thick;
-                                                             _slidingItems.Remove(uiElement);
-                                                             OnCompleteAction?.Invoke();
+            thicknessAnim.Completed += (sender, args) =>
+            {
+                uiElement.Margin = thick;
+                if (safeSlide)
+                    _slidingItems.Remove(uiElement);
+                OnCompleteAction?.Invoke();
             };
             uiElement.BeginAnimation(FrameworkElement.MarginProperty, thicknessAnim);
         }

@@ -71,13 +71,12 @@ namespace TksHelpers
             return GetFrame(currentFrame);
         }
 
-        public void Play(int fps, System.Windows.Controls.Image Container)
+        public void Play(int fps, System.Windows.Controls.Image container)
         {
-            
+
             var delay = 1000 / (double)fps;
             var timer = new Timer(delay);
-            Dispatcher.CurrentDispatcher.Invoke(new Action(() =>
-                Container.ChangeSource(GetFrame(currentFrame).ToImageSource(), 0, 0)));
+            container.Dispatcher.Invoke(() => container.ChangeSource(GetFrame(currentFrame).ToImageSource(), 0, 0), DispatcherPriority.Render);
             timer.Elapsed += (sender, args) =>
             {
                 currentFrame += step;
@@ -87,22 +86,16 @@ namespace TksHelpers
                         if (ReverseAtEnd)
                         {
                             step *= -1;
-                            //...reverse the count
-                            //apply it
                             currentFrame += step;
                         }
                         else
-                        {
                             currentFrame = 0;
-                            //...or start over
-                        }
                     else
-                    {
                         timer.Enabled = false;
-                    }
+
                 }
-                Dispatcher.CurrentDispatcher.Invoke(new Action(() =>
-                Container.ChangeSource(GetFrame(currentFrame).ToImageSource(), 0, 0)), DispatcherPriority.Render);
+                container.Dispatcher.Invoke(() =>
+                    container.ChangeSource(GetFrame(currentFrame).ToImageSource(), 0, 0), DispatcherPriority.Render);
 
             };
             timer.Enabled = true;
@@ -114,7 +107,7 @@ namespace TksHelpers
         }
 
         public int Count => frameCount;
-        
+
 
         public Image GetFrame(int index)
         {

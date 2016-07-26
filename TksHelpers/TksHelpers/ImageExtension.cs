@@ -23,8 +23,9 @@ namespace TksHelpers
         {
             if (Math.Abs(beginTime) < 0.00001 && Math.Abs(fadeTime) < 0.00001)
             {
-                var fromThread = Dispatcher.FromThread(Thread.CurrentThread) ?? Dispatcher.CurrentDispatcher;
-                fromThread.Invoke(() => image.Source = source);
+                //var fromThread = Dispatcher.FromThread(Thread.CurrentThread) ?? Dispatcher.CurrentDispatcher;
+                //fromThread.Invoke();
+                image.Dispatcher.Invoke(() => image.Source = source, DispatcherPriority.DataBind);
                 return;
             }
 
